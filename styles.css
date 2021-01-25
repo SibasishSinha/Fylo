@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: hsl(229, 57%, 11%) url("./images/bg-desktop.png") no-repeat fixed;
+    display: flex;
+}
+.left
+{
+    top: auto;
+    background: hsl(228, 56%, 26%);
+    border-radius: 10px 80px 10px 10px;
+    height: 150px;
+    width: 300px;
+    padding: 20px;
+}
+.icons{
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.doc, .upload, .folder {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    background: hsl(229, 57%, 11%);
+}
+.storage {
+    margin: auto auto auto 10px;
+    width: 40%;
+    background: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    padding: 40px;
+}
+.colors {
+	background-image: linear-gradient( to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%) );
+}
+p.bubble {
+    position: relative;
+    transform: translateX(700px);
+    width: 150px;
+    height: 50px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 10px 10px 0 10px;
+	font-size: large;
+}
+p.bubble:before,
+p.bubble:after {
+	content: ' ';
+    position: absolute;
+	width: 0;
+	height: 0;
+}
+
+p.speech:before {
+	left: 50px;
+	bottom: -50px;
+	border-color: #333 transparent transparent #333;
+}
+
+p.speech:after {
+    transform: rotate(90deg);
+	left: 130px;
+	bottom: -20px;
+	border: 10px solid;
+	border-color: #fff transparent transparent #fff;
+}
